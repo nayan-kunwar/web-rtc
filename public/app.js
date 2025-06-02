@@ -17,7 +17,7 @@ class WebRTCClient {
         this.messagesDiv = document.getElementById('messages');
         
         // Initialize WebSocket
-        this.socket = new WebSocket(`ws://${window.location.host}`);
+        this.socket = new WebSocket(`wss://${window.location.host}`);
         
         // Event listeners
         this.setupEventListeners();
